@@ -1,186 +1,78 @@
-&#x20;🚀 **AirMind AI Drawing System**
+# 🚀 AirMind AI – Gesture Controlled Drawing System
 
+A real-time computer vision application that enables users to draw and interact with a digital canvas using hand gestures, eliminating the need for traditional input devices.
 
+---
 
-An interactive \*\*AI-powered hand gesture drawing system\*\* that enables users to draw, erase, and control tools in real-time using only hand movements — eliminating the need for traditional input devices.
+## 🎯 Key Features
 
+* ✍️ Air drawing using index finger
+* 🎨 Real-time color selection (Red, Green, Blue, Pink)
+* 🧽 Dual erase modes (two-finger and wrist-based)
+* ✊ Fist gesture to clear entire canvas
+* 🤏 Pinch gesture for dynamic brush size control
+* 🎲 Gesture-triggered random color switching
+* ⚡ Smooth stroke generation using motion smoothing
 
+---
 
+## 🎥 Demo
 
+👉 https://drive.google.com/file/d/1L_eI6zuYgifRw25UfKqRUTemcbM86A8k/view?usp=drivesdk
 
-✨ Overview
+---
 
+## 🛠️ Tech Stack
 
+* Python
+* OpenCV
+* MediaPipe
+* NumPy
 
-AirMind leverages Computer Vision to transform a webcam into a \*\*touchless digital canvas\*\*.
+---
 
-It tracks hand landmarks and maps gestures to intuitive actions, creating a seamless human-computer interaction experience.
-
-
-
-
-
-&#x20;🎯 Key Features
-
-
-
-✍️ Drawing System
-
-
-
-\* Smooth and continuous air drawing using index finger
-
-\* Real-time tracking with optimized performance
-
-\* Stroke smoothing for better visual output
-
-
-
-&#x20;🎨 Color Controls
-
-
-
-\* Multiple color options: Blue, Green, Red, Pink
-
-\* Instant color selection using gesture-based UI
-
-
-
-&#x20;🧽 Smart Erasing
-
-
-
-\* Wrist-based erase for large area clearing
-
-\* Two-finger erase for precise control
-
-
-
-&#x20;⚙️ Gesture Controls
-
-
-
-\* Fist gesture to clear entire canvas
-
-\* Pinch gesture to dynamically adjust brush size
-
-\* Rock gesture to trigger random color selection
-
-
-
-⚡ Performance Optimization
-
-
-
-\* Designed to run efficiently on low-end systems
-
-\* Reduced latency with optimized frame processing
-
-
-
-
-
-&#x20;🧠 Tech Stack
-
-
-
-\* Python
-
-\* OpenCV
-
-\* MediaPipe
-
-\* NumPy
-
-
-
-\---
-
-
-
-&#x20;▶️ How to Run
-
-
-
-&#x20;1️⃣ Install dependencies
-
-
+## ⚙️ Setup & Execution
 
 ```bash
+# Install dependencies
+pip install -r requirements.txt
 
-pip install opencv-python mediapipe numpy
-
+# Run the application
+py -3.10 hand_tracking.py
 ```
 
+---
 
+## 🎮 Gesture Mapping
 
-&#x20;2️⃣ Run the project
+| Gesture             | Function          |
+| ------------------- | ----------------- |
+| Index Finger        | Draw              |
+| Two Fingers         | Erase             |
+| Wrist Movement      | Large Erase       |
+| Fist                | Clear Screen      |
+| Pinch               | Adjust Brush Size |
+| Top Bar Interaction | Change Color      |
+| Special Gesture     | Random Color      |
 
+---
 
+## 💡 Implementation Overview
 
-```bash
+The system uses MediaPipe to detect hand landmarks in real time.
+Finger positions are analyzed to interpret gestures, which are then mapped to drawing actions using OpenCV.
+A smoothing mechanism is applied to ensure stable and visually clean strokes.
 
-py -3.10 hand\_tracking.py
+---
 
-```
+## 🚀 Future Enhancements
 
+* Deep learning-based gesture recognition for improved accuracy
+* Context-aware interaction system for intelligent mode switching
 
+---
 
-\---
+## 👩‍💻 Author
 
-
-
-&#x20;📂 Project Structure
-
-
-
-```
-
-AirMind\_Project/
-
-│
-
-├── hand\_tracking.py
-
-├── README.md
-
-├── requirements.txt
-
-```
-
-
-
-
-
-
-
-\## 🚀 Future Enhancements
-
-
-
-\* 🧠 Deep Learning-based Gesture Recognition
-
-&#x20; Replace rule-based logic with a trained ML model (e.g., CNN/LSTM) for more accurate and scalable gesture interpretation.
-
-
-
-\* 🤖 Context-Aware AI Interaction
-
-&#x20; Introduce an intelligent system that understands user intent (drawing vs editing vs commands) and adapts behavior dynamically.
-
-
-
-\---
-
-
-
-\## 🧑‍💻 Author
-
-
-
-&#x20;**Vishakha Jha**
-
-Exploring AI, Computer Vision, and intuitive human-computer interaction systems.
-
-
-
+**Vishakha Jha**
+Computer Science Engineering Student
